@@ -1,0 +1,26 @@
+/* oxanium-regular - latin */
+@font-face {
+    font-family: 'Oxanium';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./oxanium-v14-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('./oxanium-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./oxanium-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./oxanium-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('./oxanium-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./oxanium-v14-latin-regular.svg#Oxanium') format('svg'); /* Legacy iOS */
+  }
+  /* oxanium-700 - latin */
+  @font-face {
+    font-family: 'Oxanium';
+    font-style: normal;
+    font-weight: 700;
+    src: url('./oxanium-v14-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('./oxanium-v14-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('./oxanium-v14-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+         url('./oxanium-v14-latin-700.woff') format('woff'), /* Modern Browsers */
+         url('./oxanium-v14-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('./oxanium-v14-latin-700.svg#Oxanium') format('svg'); /* Legacy iOS */
+  }
