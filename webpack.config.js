@@ -5,18 +5,26 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ImageMinimizerPlugin = require("image-minimizer-webpack-plugin");
 
 module.exports = {
-  entry: path.join(__dirname, "src", "index.js"),
+  entry: path.join(__dirname, "src", "index.tsx"),
   output: {
     path: path.join(__dirname, "dist"),
     filename: "index.[contenthash:16].js",
     assetModuleFilename: path.join("img", "[name].[contenthash][ext]"),
+  },
+  resolve: {
+    extensions: [".ts", ".tsx", ".js"],
   },
   module: {
     rules: [
       {
         test: /\.js$/,
         use: "babel-loader",
-        exclude: /node_modules/,
+        exclude: "/node_modules/",
+      },
+      {
+        test: /\.tsx?$/,
+        use: "ts-loader",
+        exclude: "/node_modules/",
       },
       {
         test: /\.(woff2?|eot|ttf|otf)$/i,
@@ -27,12 +35,7 @@ module.exports = {
       },
       {
         test: /\.(scss|css)$/,
-        use: [
-          MiniCssExtractPlugin.loader,
-          "css-loader",
-          "postcss-loader",
-          "sass-loader",
-        ],
+        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader", "sass-loader"],
       },
       {
         test: /\.pug$/,
