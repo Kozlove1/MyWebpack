@@ -1,10 +1,28 @@
 $font-size: 1rem;
 $font-color: lch(28 99 35);
 
+* {
+  margin: 0;
+}
+
 html {
   font-size: $font-size;
   color: $font-color;
   font-family: 'Oxanium';
+}
+
+button {
+  background-color: whitesmoke;
+  width: 8em;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.control-buttons {
+  display: flex;
+  justify-content: space-around;
+  width: 19em;
+
 }
 
 .logo1 {
@@ -16,4 +34,17 @@ html {
 
 .h1 {
   color: blueviolet;
+}
+
+.containerForPhotoAndAllThings {
+  display: flex;
+  flex-direction: column;
+  width: 30em;
+  height: 20em;
+  background-color: aqua;
+}
+
+.photoContainer {
+  width: fit-content;
+  height: fit-content;
 }
