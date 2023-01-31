@@ -8,7 +8,7 @@ export const Main = () => {
     return (
         <div className='containerForPhotoAndAllThings'>
             <div className='photoContainer'>
-                <img src={eiffel} alt='Парижу ёптэ'></img>
+                <img src={eiffel} alt='Париж'></img>
                 <Likes store={store}/>
             </div>
         </div>
